@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="root" fx:id="addPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="480.0" styleClass="root" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="waterfordtours.Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="14.0" prefHeight="113.0" prefWidth="356.0" styleClass="logo" text="Waterford Tours" textAlignment="CENTER" textFill="#f4f4ee" />
+      <Button fx:id="homeButton" layoutX="35.0" layoutY="635.0" mnemonicParsing="false" onAction="#home" prefHeight="52.0" prefWidth="52.0" styleClass="homeButton" stylesheets="@Style.css" text="H">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
+      <Pane layoutX="14.0" layoutY="186.0" prefHeight="430.0" prefWidth="450.0" styleClass="listBackground">
+         <children>
+            <GridPane layoutX="60.0" layoutY="26.0" prefHeight="335.0" prefWidth="330.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.3333740234375" minWidth="10.0" prefWidth="119.6666259765625" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="210.3333740234375" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="232.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="235.0" minHeight="0.0" prefHeight="56.6666259765625" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="288.3333740234375" minHeight="10.0" prefHeight="58.6666259765625" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="64.66668701171875" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="51.6666259765625" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="235.0" minHeight="10.0" prefHeight="62.3333740234375" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Name:" />
+                  <TextField fx:id="name" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" />
+                  <Label text="Address" GridPane.rowIndex="1" />
+                  <Label text="Cost of Entry:" GridPane.rowIndex="2" />
+                  <Label text="Opening Times:" GridPane.rowIndex="3" />
+                  <TextField fx:id="address" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="COE" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="OT" prefHeight="25.0" prefWidth="185.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="addClearB" mnemonicParsing="false" onAction="#clearAdd" prefHeight="39.0" prefWidth="88.0" text="Clear" textAlignment="CENTER" GridPane.rowIndex="5" />
+                  <Button fx:id="addSubmitB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addAttraction" prefHeight="39.0" prefWidth="88.0" text="Submit" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Label text="Description:" GridPane.rowIndex="4" />
+                  <TextField fx:id="desc" alignment="TOP_LEFT" prefHeight="67.0" prefWidth="237.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <Label fx:id="addInputMessage" layoutX="61.0" layoutY="363.0" prefHeight="52.0" prefWidth="349.0" textFill="#f40404" />
+         </children>
+      </Pane>
+      <Label text="Label" />
+   </children>
+</Pane>

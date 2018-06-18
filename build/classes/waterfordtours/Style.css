@@ -1,0 +1,41 @@
+/*
+ * Style sheet for css elements.
+ */
+
+.root{
+    -fx-background-image: url('pics/mainBackground.jpg');
+
+}
+
+.logo{
+    -fx-font-size:25px;
+    -fx-border-radius: 5%;
+    -fx-border-color: #8c7400;
+    -fx-border-width: 5px;
+    -fx-background-color: linear-gradient(white,#00358c);
+    -fx-background-radius: 16.3%;
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+    -fx-stroke:black;
+}
+
+.listBackground{
+    -fx-background-color:#d9f5fc;
+    -fx-background-radius: 10%;
+    
+}
+
+.menuButtons{
+    -fx-background-color: linear-gradient(black,#514b2b);
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}
+
+.homeButton{
+    -fx-background-image: url('pics/home.png');
+}
+
+.displayGrid{
+    -fx-text-fill:red;
+    -fx-margin: 20px 10px;
+}
